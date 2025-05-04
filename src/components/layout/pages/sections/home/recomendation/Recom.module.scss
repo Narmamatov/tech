@@ -1,0 +1,122 @@
+.recom {
+  display: flex;
+  background: linear-gradient(to right, #0a0a0a, #0d47a1);
+  height: 500px;
+  align-items: center;
+  .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    padding: 40px;
+    .info {
+      h1 {
+        font-size: clamp(50px, 5vw, 20px);
+        font-weight: 800;
+      }
+      p {
+        width: 500px;
+        font-size: 21px;
+        letter-spacing: 1.01px;
+        margin-block: 10px;
+      }
+    }
+    .btns {
+      .shopBtn {
+        background: #0ea5e9;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 300;
+        margin-right: 20px;
+        border: none;
+        cursor: pointer;
+      }
+      .shopBtn:hover {
+        background: #0ea4e9a4;
+        transition: 0.2s ease-in-out;
+      }
+      .saleBtn {
+        background: transparent;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 200;
+        margin-right: 20px;
+        border: 1px solid #ffffff;
+        cursor: pointer;
+      }
+      .saleBtn:hover {
+        background: #7c7c7c3d;
+        color: #000000;
+        transition: 0.2s ease-in-out;
+      }
+    }
+    .image {
+      img {
+        width: 100%;
+        height: auto;
+        min-width: 80%;
+        border-radius: 12px;
+      }
+    }
+  }
+}
+@media (max-width: 886px) {
+  .recom {
+    height: 400px;
+    .content {
+      flex-direction: column;
+      align-items: center;
+      .info {
+        h1 {
+          font-size: clamp(40px, 3vw, 20px);
+        }
+        p {
+          width: 90%;
+          font-size: 18px;
+        }
+      }
+      .btns {
+        flex-direction: column;
+        .shopBtn,
+        .saleBtn {
+          width: 200px;
+          margin-bottom: 10px;
+        }
+      }
+      .image {
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .recom {
+    height: 350px;
+    .content {
+      .info {
+        h1 {
+          font-size: clamp(30px, 3vw, 20px);
+        }
+        p {
+          width: 90%;
+          font-size: 14px;
+        }
+      }
+      .btns {
+        .shopBtn,
+        .saleBtn {
+          width: 120px;
+          margin-bottom: 10px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
