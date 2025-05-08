@@ -1,0 +1,50 @@
+.Footer {
+    background: rgba(37, 44, 126, 0.406);
+    color: white;
+    padding: 2rem 0;
+  
+    .content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+  
+    .left,
+    .middle,
+    .right {
+      flex: 1;
+      min-width: 200px;
+    }
+  
+    h2 {
+      color: #0ea5e9;
+      margin-bottom: 0.5rem;
+    }
+  
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+  
+    a {
+      color: #93c5fd;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 0.3rem;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    p {
+      margin-bottom: 0.5rem;
+    }
+  
+    .bottom {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.875rem;
+      opacity: 0.8;
+    }
+  }
