@@ -1,4 +1,4 @@
-.new {
+.laptop {
   display: flex;
   background-color: rgb(255, 255, 255);
   color: black;
@@ -26,11 +26,12 @@
     }
     .boxes {
       display: flex;
-      justify-content: center;
+      align-items: center;
+      justify-content: start;
       flex-wrap: wrap;
       gap: 30px;
       .box {
-        border: 1px solid #000;
+        border: 1px solid #cecece;
         width: 281px;
         height: 330px;
         border-radius: 10px;
@@ -62,8 +63,50 @@
   }
 }
 
+@media (max-width: 631px) {
+  .laptop {
+    .content {
+      .inscription {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        .info {
+          text-align: center;
+        }
+      }
+      .boxes {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        .box {
+          width: 281px;
+          height: 330px;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          background-color: white;
+          .box_img {
+            img {
+              border-top-right-radius: 10px;
+              border-top-left-radius: 10px;
+              width: 279px;
+              height: 200px;
+            }
+          }
+          .box_info {
+            padding: 20px;
+            gap: 8px;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 420px) {
-  .new {
+  .laptop {
     .content {
       .inscription {
         flex-direction: column;
